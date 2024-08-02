@@ -6,13 +6,19 @@ public class Question {
     private String option2;
     private String option3;
     private String option4;
+    private String explaination;
 
-    Question(String question,String option1,String option2,String option3,String option4){
+    Question(){
+
+    }
+
+    Question(String question,String option1,String option2,String option3,String option4,String explaination){
         this.question=question;
         this.option1=option1;
         this.option2=option2;
         this.option3=option3;
         this.option4=option4;
+        this.explaination=explaination;
     }
 
     public String getQuestion() {
@@ -53,6 +59,14 @@ public class Question {
 
     public String getOption4(){
         return option4;
+    }
+
+    public void setExplaination(String explaination){
+        this.explaination=explaination;
+    }
+
+    public String getExplaination(){
+        return explaination;
     }
 
 
